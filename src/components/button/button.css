@@ -1,0 +1,110 @@
+.button.container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    width: 60%;
+    padding: 0;
+}
+.button-container .btn {
+    height: 80px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--primary);
+    transition: 0.2s ease;
+    overflow: hidden;
+}
+
+.button-container a{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+.button-container .btn.pri{
+    border: 2px solid #89e;
+}
+.button-container .btn.pri:hover{
+    border: none;
+    background-color: #89e;
+}
+.button-container .btn.pri::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 0%;
+    left: 0;
+    transition: 0.2s ease;
+}
+.button-container .btn.pri::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 0%;
+    left: 0;
+    transition: 0.4s ease;
+}
+
+.button-container .btn.pri:hover::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 65%;
+    left:0;
+    background-color: #89f;
+}
+.button-container .btn.pri:hover::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 50%;
+    left:0;
+    background-color: rgb(193, 199, 231);
+}
+
+
+.button-container .btn.sec{
+    background-color: antiquewhite;
+}
+.button-container .btn.sec{
+    border: 2px solid var(--primary);
+    background-color: transparent;
+}
+.button-container .btn.sec::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 65%;
+    left: 0;
+    background-color: blanchedalmond;
+    transition: 0.2s ease;
+}
+.button-container .btn.sec::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 50%;
+    left: 0;
+    background-color: rgb(241, 175, 75);
+    transition: 0.4s ease;
+}
+
+.button-container .btn.sec:hover::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 0;
+    left:0;
+
+}
+.button-container .btn.sec:hover::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 0;
+    left:0;
+    background-color: rgb(193, 199, 231);
+}

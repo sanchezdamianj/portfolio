@@ -1,0 +1,47 @@
+.navigation {
+    position: fixed;
+    left: 40px;
+    top: 50%;
+    transform: translate(-100px, -50px );
+    background-color: rgb(3, 119, 38);
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    border-radius: 50px;
+    opacity: 1;
+    animation: fade-nav-in 1s ease 1 1s forwards;
+}
+@keyframes fade-nav-in {
+    to {
+        transform: translate(0, -50%);
+    }
+}
+
+.navigation a {
+    position: relative;
+    background-color: rgba(0,0,0,1.25);
+    border-radius: 50%;
+}
+.icon{
+    font-size: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    transition: fill .1s ease;
+    fill: rgb(177, 243, 168);
+}
+
+.navigation .icon.active-nav{
+    fill: rgb(85, 236, 26);
+    border: 2px solid rgb(210, 243, 213);
+}
+.navigation .icon:hover {
+    fill: rgba(152, 189, 148, 0.9);
+    border: 3px solid rgba(231, 233, 241, 0.692);
+}
+.navigation .icon.active-nav:hover {
+    fill: rgb(10, 243, 49);
+    border: 2px solid rgb(147, 196, 56);;
+}
